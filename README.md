@@ -1,38 +1,39 @@
-# DIO - Trilha .NET - Fundamentos
+# DIO - .NET Track - Fundamentals
 www.dio.me
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de fundamentos, da trilha .NET da DIO.
+## Project Challenge
+For this challenge, you will need to apply the knowledge you've gained from the fundamentals module of the DIO .NET track.
 
-## Contexto
-Você foi contratado para construir um sistema para um estacionamento, que será usado para gerenciar os veículos estacionados e realizar suas operações, como por exemplo adicionar um veículo, remover um veículo (e exibir o valor cobrado durante o período) e listar os veículos.
+## Context
+You have been hired to develop a system for a parking lot, which will be used to manage parked vehicles and perform operations such as adding a vehicle, removing a vehicle (including displaying the charged amount during the stay), and listing the vehicles.
 
-## Proposta
-Você precisará construir uma classe chamada "Estacionamento", conforme o diagrama abaixo:
+## Proposal
+You need to construct a class called "Parking" following the provided diagram:
 ![Diagrama de classe estacionamento](diagrama_classe_estacionamento.png)
 
 A classe contém três variáveis, sendo:
 
-**precoInicial**: Tipo decimal. É o preço cobrado para deixar seu veículo estacionado.
+**initialPrice**: Decimal type. It's the price charged for parking a vehicle.
 
-**precoPorHora**: Tipo decimal. É o preço por hora que o veículo permanecer estacionado.
+**hourlyPrice**: Decimal type. It's the price per hour that a vehicle remains parked.
 
-**veiculos**: É uma lista de string, representando uma coleção de veículos estacionados. Contém apenas a placa do veículo.
+**vehicles**: A list of strings, representing a collection of parked vehicles. It contains only the vehicle's license plate.
 
-A classe contém três métodos, sendo:
+The class includes three methods:
 
-**AdicionarVeiculo**: Método responsável por receber uma placa digitada pelo usuário e guardar na variável **veiculos**.
+**AddVehicle**: Method responsible for receiving a license plate entered by the user and storing it in the **vehicles** variable.
 
-**RemoverVeiculo**: Método responsável por verificar se um determinado veículo está estacionado, e caso positivo, irá pedir a quantidade de horas que ele permaneceu no estacionamento. Após isso, realiza o seguinte cálculo: **precoInicial** * **precoPorHora**, exibindo para o usuário.
+**RemoveVehicle**: Method responsible for checking if a specific vehicle is parked. If so, it will ask for the number of hours it stayed in the parking lot. After that, it performs the following calculation:  **initialPrice** * **hourlyPrice**, displaying it to the user.
 
-**ListarVeiculos**: Lista todos os veículos presentes atualmente no estacionamento. Caso não haja nenhum, exibir a mensagem "Não há veículos estacionados".
+**ListVehicles**: Lists all the vehicles currently in the parking lot. If there are none, display the message "There are no vehicles parked."
 
-Por último, deverá ser feito um menu interativo com as seguintes ações implementadas:
-1. Cadastrar veículo
-2. Remover veículo
-3. Listar veículos
-4. Encerrar
+Finally, you need to create an interactive menu with the following implemented actions:
+
+1. Register vehicle
+2. Remove vehicle
+3. List vehicles
+4. Exit
 
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+## Solution
+The code is halfway done, and you need to continue following the rules described above so that, in the end, we have a functional program. Look for the commented word "TODO" in the code, then implement it according to the rules mentioned above.
